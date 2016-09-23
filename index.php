@@ -10,6 +10,7 @@ and open the template in the editor.
         <script src="Recursos/jquery/jquery-1.12.0.min.js" type="text/javascript"></script>
         <link href="Recursos/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="Recursos/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="Recursos/js/gestionLogin.js" type="text/javascript"></script>
         <title>Proyecto Servicios</title>
     </head>
     <body>

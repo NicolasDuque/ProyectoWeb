@@ -52,7 +52,7 @@ and open the template in the editor.
                             
                             <div class="form-group">
                                 <form name="formularioRegistroUsuarios" method="post" action="Controlador/gestionUsuarios.php">
-                                    <input type="text" id="txtId" name="idUsuario" class="oculto"><br>
+                                    <input type="text" id="txtId" name="idUsuario" class="oculto" style="display: none"><br>
                                 <label>Codigo: </label><br>
                                 <input type="text" id="Codigo" name="codigo" class="form-control" placeholder="Codigo"><br>
                                  <label>Nombre: </label><br>
@@ -68,18 +68,13 @@ and open the template in the editor.
                                  <label>Contraseña: </label><br>
                                  <input type="password" id="txtContraseña" name="contraseña" class="form-control" placeholder="Contraseña"><br>
                              
-                                  <input type="text" id="txtType" name="type" class="oculto">
+                                  <input type="text" id="txtType" name="type" class="oculto" style="display: none">
                                  
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="container">
+                               
                                             <div class="row">
                                                 <div class=" col-md-12">
-                                             <button href="#ventana1" type="button" id="btnRegistrar2" class="btn btn-lg btn-group-vertical btn-success" data-toggle="modal" onclick="validarUsuario('save')">REGISTRARSE</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                          
+                                             <button href="#ventana1" type="button" id="btnRegistrar2" class="btn btn-lg btn-group-vertical btn-success form-control" data-toggle="modal" onclick="validarUsuario('save')">REGISTRARSE</button>
+                                         
                                     </div>
                                 </div><br>
 
