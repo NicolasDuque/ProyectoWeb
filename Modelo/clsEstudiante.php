@@ -7,63 +7,85 @@ class clsEstudiante {
     private $apellido;
     private $cedula;
     private $edad;
+    private $usuario;
+    private $password;
     
-    function clsEstudiante($id,$codigo,$nombre,$apellido,$cedula,$edad){
-        $this->id=$id;
-        $this->codigo=$codigo;
-        $this->nombre=$nombre;
-        $this->apellido=$apellido;
-        $this->cedula=$cedula;
-        $this->edad=$edad;
-        
-      }
-      function getId() {
-          return $this->id;
-      }
+    function __construct($id, $codigo, $nombre, $apellido, $cedula, $edad, $usuario, $password) {
+        $this->id = $id;
+        $this->codigo = $codigo;
+        $this->nombre = $nombre;
+        $this->apellido = $apellido;
+        $this->cedula = $cedula;
+        $this->edad = $edad;
+        $this->usuario = $usuario;
+        $this->password = $password;
+    }
+    function getId() {
+        return $this->id;
+    }
 
-      function getCodigo() {
-          return $this->codigo;
-      }
+    function getCodigo() {
+        return $this->codigo;
+    }
 
-      function getNombre() {
-          return $this->nombre;
-      }
+    function getNombre() {
+        return $this->nombre;
+    }
 
-      function getApellido() {
-          return $this->apellido;
-      }
+    function getApellido() {
+        return $this->apellido;
+    }
 
-      function getCedula() {
-          return $this->cedula;
-      }
+    function getCedula() {
+        return $this->cedula;
+    }
 
-      function getEdad() {
-          return $this->edad;
-      }
+    function getEdad() {
+        return $this->edad;
+    }
 
-      function setId($id) {
-          $this->id = $id;
-      }
+    function getUsuario() {
+        return $this->usuario;
+    }
 
-      function setCodigo($codigo) {
-          $this->codigo = $codigo;
-      }
+    function getPassword() {
+        return $this->password;
+    }
 
-      function setNombre($nombre) {
-          $this->nombre = $nombre;
-      }
+    function setId($id) {
+        $this->id = $id;
+    }
 
-      function setApellido($apellido) {
-          $this->apellido = $apellido;
-      }
+    function setCodigo($codigo) {
+        $this->codigo = $codigo;
+    }
 
-      function setCedula($cedula) {
-          $this->cedula = $cedula;
-      }
+    function setNombre($nombre) {
+        $this->nombre = $nombre;
+    }
 
-      function setEdad($edad) {
-          $this->edad = $edad;
-      }
+    function setApellido($apellido) {
+        $this->apellido = $apellido;
+    }
+
+    function setCedula($cedula) {
+        $this->cedula = $cedula;
+    }
+
+    function setEdad($edad) {
+        $this->edad = $edad;
+    }
+
+    function setUsuario($usuario) {
+        $this->usuario = $usuario;
+    }
+
+    function setPassword($password) {
+        $this->password = $password;
+    }
+
+
+     
 
 
 }
