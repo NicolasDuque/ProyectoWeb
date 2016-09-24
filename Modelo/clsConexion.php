@@ -12,8 +12,8 @@ class clsConexion {
     
     public function conectar(){
         $this->usuario="postgres"; 
-        $this->password="admin";//el password con el que se instalo el wamp server
-        $this->dataBase="registroAcademico";
+        $this->password="jacko1234";//el password con el que se instalo el wamp server
+        $this->dataBase="ingenieria3";
         $this->puerto=5432;
         $this->host="localhost";
         

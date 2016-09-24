@@ -8,7 +8,8 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
     
-        <script src="Recursos/jquery/jquery-1.12.0.min.js" type="text/javascript"></script>
+        <script src="../Recursos/jquery/jquery-1.12.0.min.js" type="text/javascript"></script>
+        <script src="../Recursos/js/gestionUsuario.js" type="text/javascript"></script>
         <link href="../Recursos/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="../Recursos/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <link href="../Recursos/css/style.css" rel="stylesheet" type="text/css"/>
@@ -51,10 +52,10 @@ and open the template in the editor.
                         <div class="panel-body">
                             
                             <div class="form-group">
-                                <form name="formularioRegistroUsuarios" method="post" action="Controlador/gestionUsuarios.php">
+                                <form name="formularioRegistroUsuarios" method="post" action="Controlador/gestionEstudiante.php">
                                     <input type="text" id="txtId" name="idUsuario" class="oculto" style="display: none"><br>
                                 <label>Codigo: </label><br>
-                                <input type="text" id="Codigo" name="codigo" class="form-control" placeholder="Codigo"><br>
+                                <input type="text" id="txtCodigo" name="codigo" class="form-control" placeholder="Codigo"><br>
                                  <label>Nombre: </label><br>
                                  <input type="text" id="txtNombre" name="nombre" class="form-control" placeholder="Nombre"><br>
                                  <label>Apellido: </label><br>
@@ -66,7 +67,7 @@ and open the template in the editor.
                                  <label>Usuario: </label><br>
                                  <input type="text" id="txtUsuario" name="usuario" class="form-control" placeholder="usuario"><br>
                                  <label>Contraseña: </label><br>
-                                 <input type="password" id="txtContraseña" name="contraseña" class="form-control" placeholder="Contraseña"><br>
+                                 <input type="password" id="txtContraseña" name="password" class="form-control" placeholder="Contraseña"><br>
                              
                                   <input type="text" id="txtType" name="type" class="oculto" style="display: none">
                                  

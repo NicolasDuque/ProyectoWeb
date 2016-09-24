@@ -39,7 +39,7 @@ function validarLogin(tipo){
         success: function (data) {
             alert(data);
              if(data==="1"){
-             window.location.reload();
+             window.location = "Vista/inicio.html";
          }else{
              alert("no existe el usuario");
          }
@@ -66,7 +66,7 @@ function validarLogin(tipo){
             //alert(data);
             
              if(data==="1"){
-             window.location.reload();
+               window.location = "Vista/inicio.html";
          }else{
              $('#color').removeClass('alert-info').addClass('alert-warning');
             document.getElementById("mensajeU").innerHTML = "<b>No existe el usuario</b>";

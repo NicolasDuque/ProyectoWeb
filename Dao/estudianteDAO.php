@@ -12,9 +12,9 @@ class estudianteDAO {
     }
     public function  guardar(clsEstudiante $obj){
         
-        $sql= "insert    into estudiantes(codigo,nombre,apellido,cedula,edad) values('".
+        $sql= "insert into usuario(codigo,nombre,apellido,cedula,edad,usuario,password) values('".
             $obj->getCodigo() ."','".$obj->getNombre()."','".$obj->getApellido()."','".$obj->getCedula()."',".
-            $obj->getEdad().");";
+            $obj->getEdad().",'".$obj->getUsuario()."','".$obj->getPassword()."');";
         
         $resultado = $this->objCon->ejecutar($sql);
         $this->objCon->convertirJSONSinRetorno($resultado);
