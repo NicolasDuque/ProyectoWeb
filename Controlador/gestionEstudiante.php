@@ -9,11 +9,14 @@ isset($_REQUEST['nombre'])? $nombre= $_REQUEST['nombre']:$nombre="";
 isset($_REQUEST['apellido'])? $apellido= $_REQUEST['apellido']:$apellido="";
 isset($_REQUEST['cedula'])? $cedula= $_REQUEST['cedula']:$cedula="";
 isset($_REQUEST['edad'])? $edad= $_REQUEST['edad']:$edad="";
+isset($_REQUEST['usuario'])? $usuario= $_REQUEST['usuario']:$usuario="";
+isset($_REQUEST['password'])? $password= $_REQUEST['password'] : $password="";
 isset($_REQUEST['type'])? $accion= $_REQUEST['type'] : $accion="";
+
 
 //echo $id.'-'.$codigo.'-'.$nombre.'-'.$apellido.'-'.$cedula.'-'.$edad.'-'.$semestre.'-'.$accion;
 
-$estudiante= new clsEstudiante($id, $codigo, $nombre, $apellido, $cedula, $edad);
+$estudiante= new clsEstudiante($id, $codigo, $nombre, $apellido, $cedula, $edad, $usuario, $password);
 $dao= new estudianteDAO();
 
 switch($accion){
