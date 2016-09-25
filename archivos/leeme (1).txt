@@ -1,0 +1,9 @@
+Modificar la clase "clsConexion" y cambiar los atributos por
+
+	$this->usuario="postgres"; //base de datos postgress
+        $this->password="admin";//el password de la base de datos
+        $this->dataBase="ingenieria3"; //nombre de la base de datos 
+        $this->puerto=5432; //puerto por defecto de postgress
+        $this->host="localhost";
+
+Primero se debe registrar antes de loguearse
